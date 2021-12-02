@@ -1,0 +1,181 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] data.oci_core_images.get_images (expand)" [label = "data.oci_core_images.get_images", shape = "box"]
+		"[root] data.oci_core_vcn.openshift_vcn (expand)" [label = "data.oci_core_vcn.openshift_vcn", shape = "box"]
+		"[root] data.oci_identity_availability_domains.get_availability_domains (expand)" [label = "data.oci_identity_availability_domains.get_availability_domains", shape = "box"]
+		"[root] data.oci_identity_regions.home-region (expand)" [label = "data.oci_identity_regions.home-region", shape = "box"]
+		"[root] data.oci_identity_tenancy.tenancy (expand)" [label = "data.oci_identity_tenancy.tenancy", shape = "box"]
+		"[root] data.template_file.pxe_boot (expand)" [label = "data.template_file.pxe_boot", shape = "box"]
+		"[root] data.template_file.user_data (expand)" [label = "data.template_file.user_data", shape = "box"]
+		"[root] oci_core_default_route_table.openshift_public_route_table (expand)" [label = "oci_core_default_route_table.openshift_public_route_table", shape = "box"]
+		"[root] oci_core_default_security_list.oci_core_default_security (expand)" [label = "oci_core_default_security_list.oci_core_default_security", shape = "box"]
+		"[root] oci_core_instance.ipxe_web_server (expand)" [label = "oci_core_instance.ipxe_web_server", shape = "box"]
+		"[root] oci_core_instance.os_cluster_nodes (expand)" [label = "oci_core_instance.os_cluster_nodes", shape = "box"]
+		"[root] oci_core_internet_gateway.openshift_internet_gateway (expand)" [label = "oci_core_internet_gateway.openshift_internet_gateway", shape = "box"]
+		"[root] oci_core_nat_gateway.openshift_cluster_nat_gateway (expand)" [label = "oci_core_nat_gateway.openshift_cluster_nat_gateway", shape = "box"]
+		"[root] oci_core_network_security_group.openshift_public_lb_network_security_group (expand)" [label = "oci_core_network_security_group.openshift_public_lb_network_security_group", shape = "box"]
+		"[root] oci_core_route_table.openshift_cluster_route_table (expand)" [label = "oci_core_route_table.openshift_cluster_route_table", shape = "box"]
+		"[root] oci_core_subnet.openshift_cluster_subnet (expand)" [label = "oci_core_subnet.openshift_cluster_subnet", shape = "box"]
+		"[root] oci_core_subnet.openshift_public_lb_subnet (expand)" [label = "oci_core_subnet.openshift_public_lb_subnet", shape = "box"]
+		"[root] oci_core_vcn.openshift_vcn (expand)" [label = "oci_core_vcn.openshift_vcn", shape = "box"]
+		"[root] oci_dns_rrset.api (expand)" [label = "oci_dns_rrset.api", shape = "box"]
+		"[root] oci_dns_rrset.api-int (expand)" [label = "oci_dns_rrset.api-int", shape = "box"]
+		"[root] oci_dns_rrset.apps_wildcard (expand)" [label = "oci_dns_rrset.apps_wildcard", shape = "box"]
+		"[root] oci_dns_zone.openshift_zone (expand)" [label = "oci_dns_zone.openshift_zone", shape = "box"]
+		"[root] oci_identity_compartment.openshift_compartment (expand)" [label = "oci_identity_compartment.openshift_compartment", shape = "box"]
+		"[root] oci_load_balancer_backend.api_backend (expand)" [label = "oci_load_balancer_backend.api_backend", shape = "box"]
+		"[root] oci_load_balancer_backend.bs_backend (expand)" [label = "oci_load_balancer_backend.bs_backend", shape = "box"]
+		"[root] oci_load_balancer_backend.http_backend (expand)" [label = "oci_load_balancer_backend.http_backend", shape = "box"]
+		"[root] oci_load_balancer_backend.https_backend (expand)" [label = "oci_load_balancer_backend.https_backend", shape = "box"]
+		"[root] oci_load_balancer_backend.public_http_backend (expand)" [label = "oci_load_balancer_backend.public_http_backend", shape = "box"]
+		"[root] oci_load_balancer_backend.public_https_backend (expand)" [label = "oci_load_balancer_backend.public_https_backend", shape = "box"]
+		"[root] oci_load_balancer_backend_set.api_backend_set (expand)" [label = "oci_load_balancer_backend_set.api_backend_set", shape = "box"]
+		"[root] oci_load_balancer_backend_set.bs_backend_set (expand)" [label = "oci_load_balancer_backend_set.bs_backend_set", shape = "box"]
+		"[root] oci_load_balancer_backend_set.http_backend_set (expand)" [label = "oci_load_balancer_backend_set.http_backend_set", shape = "box"]
+		"[root] oci_load_balancer_backend_set.https_backend_set (expand)" [label = "oci_load_balancer_backend_set.https_backend_set", shape = "box"]
+		"[root] oci_load_balancer_backend_set.public_http_backend_set (expand)" [label = "oci_load_balancer_backend_set.public_http_backend_set", shape = "box"]
+		"[root] oci_load_balancer_backend_set.public_https_backend_set (expand)" [label = "oci_load_balancer_backend_set.public_https_backend_set", shape = "box"]
+		"[root] oci_load_balancer_listener.api_listener (expand)" [label = "oci_load_balancer_listener.api_listener", shape = "box"]
+		"[root] oci_load_balancer_listener.bs_listener (expand)" [label = "oci_load_balancer_listener.bs_listener", shape = "box"]
+		"[root] oci_load_balancer_listener.http_listener (expand)" [label = "oci_load_balancer_listener.http_listener", shape = "box"]
+		"[root] oci_load_balancer_listener.https_listener (expand)" [label = "oci_load_balancer_listener.https_listener", shape = "box"]
+		"[root] oci_load_balancer_listener.public_http_listener (expand)" [label = "oci_load_balancer_listener.public_http_listener", shape = "box"]
+		"[root] oci_load_balancer_listener.public_https_listener (expand)" [label = "oci_load_balancer_listener.public_https_listener", shape = "box"]
+		"[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)" [label = "oci_load_balancer_load_balancer.openshift_private_lb", shape = "box"]
+		"[root] oci_load_balancer_load_balancer.openshift_public_lb (expand)" [label = "oci_load_balancer_load_balancer.openshift_public_lb", shape = "box"]
+		"[root] output.nameservers" [label = "output.nameservers", shape = "note"]
+		"[root] output.openshift_nodes" [label = "output.openshift_nodes", shape = "note"]
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"]" [label = "provider[\"registry.terraform.io/hashicorp/oci\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"].home" [label = "provider[\"registry.terraform.io/hashicorp/oci\"].home", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/template\"]" [label = "provider[\"registry.terraform.io/hashicorp/template\"]", shape = "diamond"]
+		"[root] provider[\"registry.terraform.io/hashicorp/time\"]" [label = "provider[\"registry.terraform.io/hashicorp/time\"]", shape = "diamond"]
+		"[root] time_sleep.wait (expand)" [label = "time_sleep.wait", shape = "box"]
+		"[root] var.compartment_ocid" [label = "var.compartment_ocid", shape = "note"]
+		"[root] var.number_of_nodes" [label = "var.number_of_nodes", shape = "note"]
+		"[root] var.openshift_iso_cmd" [label = "var.openshift_iso_cmd", shape = "note"]
+		"[root] var.os_compartment_name" [label = "var.os_compartment_name", shape = "note"]
+		"[root] var.rc_node" [label = "var.rc_node", shape = "note"]
+		"[root] var.rc_node_index" [label = "var.rc_node_index", shape = "note"]
+		"[root] var.region" [label = "var.region", shape = "note"]
+		"[root] var.tenancy_ocid" [label = "var.tenancy_ocid", shape = "note"]
+		"[root] var.zone_name" [label = "var.zone_name", shape = "note"]
+		"[root] data.oci_core_images.get_images (expand)" -> "[root] oci_identity_compartment.openshift_compartment (expand)"
+		"[root] data.oci_core_vcn.openshift_vcn (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] data.oci_identity_availability_domains.get_availability_domains (expand)" -> "[root] oci_identity_compartment.openshift_compartment (expand)"
+		"[root] data.oci_identity_regions.home-region (expand)" -> "[root] data.oci_identity_tenancy.tenancy (expand)"
+		"[root] data.oci_identity_tenancy.tenancy (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/oci\"]"
+		"[root] data.oci_identity_tenancy.tenancy (expand)" -> "[root] var.tenancy_ocid"
+		"[root] data.template_file.pxe_boot (expand)" -> "[root] oci_core_instance.ipxe_web_server (expand)"
+		"[root] data.template_file.user_data (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/template\"]"
+		"[root] data.template_file.user_data (expand)" -> "[root] var.openshift_iso_cmd"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] data.oci_core_vcn.openshift_vcn (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_core_default_route_table.openshift_public_route_table (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_core_default_security_list.oci_core_default_security (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_core_network_security_group.openshift_public_lb_network_security_group (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_dns_rrset.api (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_dns_rrset.api-int (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_dns_rrset.apps_wildcard (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.api_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.bs_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.http_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.https_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.public_http_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_backend.public_https_backend (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.api_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.bs_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.http_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.https_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.public_http_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] oci_load_balancer_listener.public_https_listener (expand)"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] output.nameservers"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] output.openshift_nodes"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] var.rc_node"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] var.rc_node_index"
+		"[root] oci_core_default_route_table.openshift_public_route_table (expand)" -> "[root] oci_core_internet_gateway.openshift_internet_gateway (expand)"
+		"[root] oci_core_default_security_list.oci_core_default_security (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] oci_core_instance.ipxe_web_server (expand)" -> "[root] data.oci_core_images.get_images (expand)"
+		"[root] oci_core_instance.ipxe_web_server (expand)" -> "[root] data.oci_identity_availability_domains.get_availability_domains (expand)"
+		"[root] oci_core_instance.ipxe_web_server (expand)" -> "[root] data.template_file.user_data (expand)"
+		"[root] oci_core_instance.ipxe_web_server (expand)" -> "[root] oci_core_subnet.openshift_public_lb_subnet (expand)"
+		"[root] oci_core_instance.os_cluster_nodes (expand)" -> "[root] data.template_file.pxe_boot (expand)"
+		"[root] oci_core_instance.os_cluster_nodes (expand)" -> "[root] oci_core_subnet.openshift_cluster_subnet (expand)"
+		"[root] oci_core_instance.os_cluster_nodes (expand)" -> "[root] time_sleep.wait (expand)"
+		"[root] oci_core_instance.os_cluster_nodes (expand)" -> "[root] var.number_of_nodes"
+		"[root] oci_core_internet_gateway.openshift_internet_gateway (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] oci_core_nat_gateway.openshift_cluster_nat_gateway (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] oci_core_network_security_group.openshift_public_lb_network_security_group (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] oci_core_route_table.openshift_cluster_route_table (expand)" -> "[root] oci_core_nat_gateway.openshift_cluster_nat_gateway (expand)"
+		"[root] oci_core_subnet.openshift_cluster_subnet (expand)" -> "[root] oci_core_route_table.openshift_cluster_route_table (expand)"
+		"[root] oci_core_subnet.openshift_public_lb_subnet (expand)" -> "[root] oci_core_vcn.openshift_vcn (expand)"
+		"[root] oci_core_vcn.openshift_vcn (expand)" -> "[root] oci_identity_compartment.openshift_compartment (expand)"
+		"[root] oci_dns_rrset.api (expand)" -> "[root] oci_dns_zone.openshift_zone (expand)"
+		"[root] oci_dns_rrset.api (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_dns_rrset.api-int (expand)" -> "[root] oci_dns_zone.openshift_zone (expand)"
+		"[root] oci_dns_rrset.api-int (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_dns_rrset.apps_wildcard (expand)" -> "[root] oci_dns_zone.openshift_zone (expand)"
+		"[root] oci_dns_rrset.apps_wildcard (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_public_lb (expand)"
+		"[root] oci_dns_zone.openshift_zone (expand)" -> "[root] oci_identity_compartment.openshift_compartment (expand)"
+		"[root] oci_dns_zone.openshift_zone (expand)" -> "[root] var.zone_name"
+		"[root] oci_identity_compartment.openshift_compartment (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/oci\"].home"
+		"[root] oci_identity_compartment.openshift_compartment (expand)" -> "[root] var.compartment_ocid"
+		"[root] oci_identity_compartment.openshift_compartment (expand)" -> "[root] var.os_compartment_name"
+		"[root] oci_load_balancer_backend.api_backend (expand)" -> "[root] oci_load_balancer_backend_set.api_backend_set (expand)"
+		"[root] oci_load_balancer_backend.bs_backend (expand)" -> "[root] oci_load_balancer_backend_set.bs_backend_set (expand)"
+		"[root] oci_load_balancer_backend.http_backend (expand)" -> "[root] oci_load_balancer_backend_set.http_backend_set (expand)"
+		"[root] oci_load_balancer_backend.https_backend (expand)" -> "[root] oci_load_balancer_backend_set.https_backend_set (expand)"
+		"[root] oci_load_balancer_backend.public_http_backend (expand)" -> "[root] oci_load_balancer_backend_set.public_http_backend_set (expand)"
+		"[root] oci_load_balancer_backend.public_http_backend (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend.public_https_backend (expand)" -> "[root] oci_load_balancer_backend_set.public_https_backend_set (expand)"
+		"[root] oci_load_balancer_backend.public_https_backend (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend_set.api_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend_set.bs_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend_set.http_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend_set.https_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)"
+		"[root] oci_load_balancer_backend_set.public_http_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_public_lb (expand)"
+		"[root] oci_load_balancer_backend_set.public_https_backend_set (expand)" -> "[root] oci_load_balancer_load_balancer.openshift_public_lb (expand)"
+		"[root] oci_load_balancer_listener.api_listener (expand)" -> "[root] oci_load_balancer_backend_set.api_backend_set (expand)"
+		"[root] oci_load_balancer_listener.bs_listener (expand)" -> "[root] oci_load_balancer_backend_set.bs_backend_set (expand)"
+		"[root] oci_load_balancer_listener.http_listener (expand)" -> "[root] oci_load_balancer_backend_set.http_backend_set (expand)"
+		"[root] oci_load_balancer_listener.https_listener (expand)" -> "[root] oci_load_balancer_backend_set.https_backend_set (expand)"
+		"[root] oci_load_balancer_listener.public_http_listener (expand)" -> "[root] oci_load_balancer_backend_set.public_http_backend_set (expand)"
+		"[root] oci_load_balancer_listener.public_https_listener (expand)" -> "[root] oci_load_balancer_backend_set.public_https_backend_set (expand)"
+		"[root] oci_load_balancer_load_balancer.openshift_private_lb (expand)" -> "[root] oci_core_instance.os_cluster_nodes (expand)"
+		"[root] oci_load_balancer_load_balancer.openshift_public_lb (expand)" -> "[root] oci_core_subnet.openshift_public_lb_subnet (expand)"
+		"[root] output.nameservers" -> "[root] oci_dns_zone.openshift_zone (expand)"
+		"[root] output.openshift_nodes" -> "[root] oci_core_instance.os_cluster_nodes (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] data.oci_core_vcn.openshift_vcn (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_core_default_route_table.openshift_public_route_table (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_core_default_security_list.oci_core_default_security (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_core_network_security_group.openshift_public_lb_network_security_group (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_dns_rrset.api (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_dns_rrset.api-int (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_dns_rrset.apps_wildcard (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.api_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.bs_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.http_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.https_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.public_http_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_backend.public_https_backend (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.api_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.bs_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.http_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.https_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.public_http_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)" -> "[root] oci_load_balancer_listener.public_https_listener (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"]" -> "[root] var.region"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"].home (close)" -> "[root] oci_identity_compartment.openshift_compartment (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/oci\"].home" -> "[root] data.oci_identity_regions.home-region (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/template\"] (close)" -> "[root] data.template_file.pxe_boot (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/time\"] (close)" -> "[root] time_sleep.wait (expand)"
+		"[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/oci\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/oci\"].home (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/template\"] (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/time\"] (close)"
+		"[root] time_sleep.wait (expand)" -> "[root] oci_core_instance.ipxe_web_server (expand)"
+		"[root] time_sleep.wait (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/time\"]"
+	}
+}
+
